@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Vaani - Indian Language Recognition</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-background"></div>
+    <div class="container">
+        <div class="title-container">
+            <h1 class="main-title">
+                <span class="title-text saffron" title="Hindi">भ</span>
+                <span class="title-text white" title="Telugu">హ</span>
+                <span class="title-text green" title="Tamil">அ</span>
+                <span class="title-text saffron" title="Malayalam">ര</span>
+                <span class="title-text white" title="Kannada">ತ್</span>
+                <span class="title-divider">|</span>
+                <span class="title-text green" title="Bengali">ভা</span>
+                <span class="title-text saffron" title="Gujarati">વા</span>
+                <span class="title-text white" title="Marathi">णी</span>
+            </h1>
+            <div class="subtitle">Bharat Vaani</div>
+            <div class="chakra">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Ashoka_Chakra.svg" alt="Ashoka Chakra">
+            </div>
+        </div>
+        <div class="controls">
+            <select id="languageSelect">
+                <option value="en-US">English</option>
+                <option value="hi-IN">Hindi</option>
+                <option value="te-IN">Telugu</option>
+                <option value="ta-IN">Tamil</option>
+                <option value="kn-IN">Kannada</option>
+                <option value="ml-IN">Malayalam</option>
+                <option value="mr-IN">Marathi</option>
+                <option value="bn-IN">Bengali</option>
+                <option value="gu-IN">Gujarati</option>
+            </select>
+            <button id="startButton">Start Recording</button>
+            <button id="stopButton" disabled>Stop Recording</button>
+        </div>
+        <div class="status" id="status">Click 'Start Recording' to begin</div>
+        <div class="transcript-container">
+            <h2>Transcript</h2>
+            <div id="transcript" class="transcript"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
